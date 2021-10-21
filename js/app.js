@@ -6,8 +6,7 @@ do {
 let age;
 do {
   age = +prompt("Enter your age.");
-  console.log(age);
-} while (isNaN(age) && age < 18);
+} while (isNaN(age) || age < 18);
 
 const person = new Person(name, age);
 person.showUserInfo();
